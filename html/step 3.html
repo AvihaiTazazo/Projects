@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/css step 2.css">
+    <title>step 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/61feb10351.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="grid-container">
+        <div class="grid-item-up">
+          <nav>
+            <ul class="nav-1">
+              <li class="nav-item1" style="float:left; font-size: 3px;">
+                <a class="nav-link disabled" href="#">
+                  <i class="fas fa-user"></i>&nbsp; My Area </a>
+              </li>
+              <li class="nav-item1" style="float:left">
+                <a class="nav-link disabled" href="#">
+                  <i class="far fa-credit-card"></i>&nbsp; Activate Card </a>
+              </li>
+              <li class="nav-item1" style="float:right">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-phone-alt"></i>&nbsp; 080-777-70-56 <img src="img/united-kingdom-s.png" class="UKs">
+                  <select name="telEN" id="telEN" disabled>
+                    <option value="telEN">EN</option>
+                  </select>
+                </a>
+              </li>
+              <li class="nav-item1" style="float:right">
+                <button type="button" id="button" class="btn btn-primary btn-sm">Get Your Card</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="grid-item-down">
+          <img src="img/amex logo.png" alt="" class="logo">
+          <div class="nav-class" nav nav-pills nav-stacked>
+            <ul>
+              <li>
+                <a href="#">why amex?</a>
+              </li>
+              <li>
+                <a href="#">a card for all</a>
+              </li>
+              <li>
+                <a href="#">reload your card</a>
+              </li>
+              <li>
+                <a href="#">our offers</a>
+              </li>
+              <li>
+                <a href="#">faq</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="bar">
+        <ul>
+          <li class="active">
+            <a href="#" id="amex2">
+              <span>
+                <i class="fas fa-check-circle" id="check"></i> &nbsp; &nbsp; 1 &nbsp; &nbsp; Amex Card </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="info3">
+              <span>
+                <i class="fas fa-check-circle" id="check"></i> &nbsp; &nbsp;2 &nbsp; &nbsp; Information </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="pay3">
+              <span>3 &nbsp; &nbsp; Payment Method</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-3-container">
+        <img src="img/platinum-card-metal_480x304.png" alt="" class="platinum2">
+        <img src="img/platinum-card-metal_480x304.png" alt="" class="platinum3">
+        <div class="main-left-container">
+          <div class="check">&#10003;</div>
+          <div class="nub1">1</div>
+          <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="gray-box">
+            <div class="top-right">
+              <div id="T">T</div>
+              <div id="pm">Priority Mail</div>
+              <div id="M">M 20 g</div>
+            </div>
+            <div class="John">
+              <div id="SmFont">John Doe</div>
+              <div id="SmFont2">22 London Road,</div>
+              <div id="SmFont">London, SE1 6JW</div>
+              <div id="SmFont2">United Kingdom</div>
+            </div>
+          </div>
+          <div class="gray-box-2">
+            <div class="blue-box-1">
+              <div>&#10003; &nbsp; Card type: AMEX International</div>
+              <div>&#10003; &nbsp; Currency: EUR</div>
+              <div>&#10003; &nbsp; IBAN: UK</div>
+            </div>
+            <div class="blue-box-2">
+              <div>1 x card (annual fees) <span id="euro">29.90 &euro; </span>
+              </div>
+              <div>first deposit <span id="euro">10.00 &euro; </span>
+              </div>
+            </div>
+            <div class="none-box">
+              <div class="coupon">coupon <div>
+                  <p id="optional" class="form-text text-muted">(optional)</p>
+                </div>
+              </div>
+              <div id="input3">
+                <input type="text" placeholder="Write the coupon here ..." aria-label="Last name">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" disabled id="btnbox3">Validate</button>
+              </div>
+            </div>
+            <div class="blue-box-3">
+              <div>Total > <span id="euro2">39.90 &euro; </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-right-container">
+          <div class="title-details">Payment mode</div>
+          <hr class="hr-details">
+          <div class="boxes-container">
+            <div class="grid-item">
+              <div>
+                <img src="img/visa-card.png" class="box-img">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" id="btnbox">VISA card</button>
+              </div>
+              <div id="SecurePayment">100% Secure Payment <img src="img/ssl-order-card-pill.png" class="ssl">
+              </div>
+            </div>
+            <div class="grid-item">
+              <div></div>
+              <img src="img/master-american-dinners-card.png" class="box-img">
+              <div>
+                <button type="button" class="btn btn-primary" id="btnbox">Mastercard</button>
+              </div>
+              <div id="SecurePayment">100% Secure Payment <img src="img/ssl-order-card-pill.png" class="ssl">
+              </div>
+            </div>
+            <div class="grid-item">
+              <div>
+                <img src="img/paypal-card.png" class="box-img">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" id="btnbox">PayPAl</button>
+              </div>
+              <div id="SecurePayment">100% Secure Payment <img src="img/ssl-order-card-pill.png" class="ssl">
+              </div>
+            </div>
+            <div class="grid-item">
+              <div>
+                <img src="img/neosurf-coupons.png" class="box-img">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" id="btnbox">Neosurf</button>
+              </div>
+              <div id="SecurePayment">100% Secure Payment <img src="img/ssl-order-card-pill.png" class="ssl">
+              </div>
+            </div>
+            <div class="grid-item">
+              <div>
+                <img src="img/poste.png" class="box-img">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" id="btnbox">Mandat (MVC)</button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div>
+                <img src="img/virement.png" class="box-img">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" id="btnbox">Transfer</button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div>
+                <img src="img/bitcoin.png" class="box-img">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary" id="btnbox">Bitcoin</button>
+              </div>
+              <div id="SecurePayment">100% Secure Payment <img src="img/ssl-order-card-pill.png" class="ssl">
+              </div>
+            </div>
+          </div>
+          <div id="ssl-pay">
+            <img src="img/ssl-order-card.png" class="ssl-img">&nbsp;Secure Payment Option - SSL
+          </div>
+        </div>
+      </div>
+      <div class="container-nav">
+        <button type="button" id="per" class="btn btn-light btn-sm">
+          <a href="step 2.html">
+            <i class="fas fa-angle-left"></i>&nbsp; Previous </a>
+        </button>
+      </div>
+    </main>
+  </body>
+  <div class="subscribers">
+    <span>
+      <img class="lion" src="img/lion.png" alt="lion">
+    </span>
+    <span> 730,804 <span id="subox">subscribers trust us.</span> &nbsp; At your service for <span id="number">9</span>
+      <span id="years">YEARS</span>
+      <span id="and">and</span>
+      <span id="number">274</span>
+      <span id="days">Days.</span>
+    </span>
+  </div>
+  <footer class="footer">
+    <img src="img/trust-us.png" alt="" id="phone-girl">
+    <div class="lastwords">
+      <div id="phtext"></div>
+      <div id="AMEX">
+        <strong>AMEX at your service</strong>
+      </div>
+      <div id="Monday">Customer Service in English at your service by <strong>phone</strong> Monday to <strong> Saturday</strong>
+        <br>
+        <strong>from 9h to 18h30</strong>
+      </div>
+    </div>
+  </footer>
+</html>

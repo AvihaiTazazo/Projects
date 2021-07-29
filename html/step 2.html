@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/css step 2.css">
+    <title>step 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/61feb10351.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="grid-container">
+        <div class="grid-item-up">
+          <nav>
+            <ul class="nav-1">
+              <li class="nav-item1" style="float:left">
+                <a class="nav-link disabled" href="#">
+                  <i class="fas fa-user"></i>&nbsp; My Area </a>
+              </li>
+              <li class="nav-item1" style="float:left">
+                <a class="nav-link disabled" href="#">
+                  <i class="far fa-credit-card"></i>&nbsp; Activate Card </a>
+              </li>
+              <li class="nav-item1" style="float:right">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-phone-alt"></i>&nbsp; 080-777-70-56 <img src="img/united-kingdom-s.png" class="UKs">
+                  <select name="telEN" id="telEN" disabled>
+                    <option value="telEN">EN</option>
+                  </select>
+                </a>
+              </li>
+              <li class="nav-item1" style="float:right">
+                <button type="button" id="button" class="btn btn-primary btn-sm">Get Your Card</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="grid-item-down">
+          <img src="img/amex logo.png" alt="" class="logo">
+          <div class="nav-class" nav nav-pills nav-stacked>
+            <ul>
+              <li>
+                <a href="#">why amex?</a>
+              </li>
+              <li>
+                <a href="#">a card for all</a>
+              </li>
+              <li>
+                <a href="#">reload your card</a>
+              </li>
+              <li>
+                <a href="#">our offers</a>
+              </li>
+              <li>
+                <a href="#">faq</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="bar">
+        <ul>
+          <li class="active">
+            <a href="#" id="amex2">
+              <span>
+                <i class="fas fa-check-circle" id="check"></i> &nbsp; &nbsp; 1 &nbsp; &nbsp; Amex Card </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="info2">
+              <span>2 &nbsp; &nbsp; Information</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>3 &nbsp; &nbsp; Payment Method</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-grid-container">
+        <div class="main-grid-item-imgs">
+          <img src="img/platinum-card-metal_480x304.png" alt="" class="platinum">
+          <img src="img/badge_price.png" alt="" class="price">
+        </div>
+        <div class="main-grid-item-form">
+          <div class="title-details">MY DETAILS</div>
+          <hr class="hr-details">
+          <form class="row g-3">
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <br>
+              <input type="email" class="form-control" style="font-size: 15px; padding: 3px 10px;" id="email">
+              <p id="dateHelpBlock" class="form-text text-muted" style="font-size: 12px;">(To connect to your Customer Area)</p>
+            </div>
+            <div class="col-md-5">
+              <label for="Area Code" class="form-label">Area Code</label>
+              <select id="Area Code" class="form-select" style="font-size: 12px; padding: 3px 10px;">
+                <option selected>+44 (United Kingdom)</option>
+                <option>+33 (France)</option>
+                <option>+972 (Israel)</option>
+              </select>
+            </div>
+            <div class="col-md-7">
+              <label for="PhoneNumber" class="form-label">Phone Number</label>
+              <br>
+              <input type="tel" class="form-control" style="font-size: 12px; padding: 3px 10px;" id="PhoneNumber">
+              <p id="dateHelpBlock" class="form-text text-muted">(To receive your PIN code)</p>
+            </div>
+            <div id="container1"></div>
+            <div class="row g-3">
+              <div class="title-details2">RESIDENTIAL ADDRESS</div>
+              <div class="col-md-12">
+                <input class="form-control" style="font-size: 15px; padding: 3px 10px;" type="text" value="Search for an address" aria-label="Disabled input example" disabled readonly>
+              </div>
+              <div class="col-md-6">
+                <label for="Address" class="form-label">Address</label>
+                <br>
+                <input type="text" class="form-control" style="font-size: 12px; padding: 3px 10px;" id="Address">
+              </div>
+              <div class="col-md-6">
+                <label for="AdditionalAddressDetails" class="form-label">Additional Address Details</label>
+                <br>
+                <input type="text" class="form-control" style="font-size: 12px; padding: 3px 10px;" id="AdditionalAddressDetails">
+              </div>
+              <div class="col-md-4">
+                <label for="City" class="form-label">City</label>
+                <br>
+                <input type="text" class="form-control" style="font-size: 12px; padding: 3px 10px;" id="City">
+              </div>
+              <div class="col-md-4">
+                <label for="ZipCode" class="form-label">Zip Code</label>
+                <br>
+                <input type="text" class="form-control" style="font-size: 12px; padding: 3px 10px;" id="ZipCode">
+              </div>
+              <div class="col-md-4">
+                <label for="Country" class="form-label">Country</label>
+                <br>
+                <select id="Country" class="form-select" style="font-size: 12px; padding: 3px 10px;">
+                  <option selected>United Kingdom</option>
+                  <option>France</option>
+                  <option>Israel</option>
+                </select>
+              </div>
+            </div>
+            <div id="container2"></div>
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="DeliveryAddress" id="DeliveryAddress">
+                <label class="form-check-label" style="font-size: 15px;" for="DeliveryAddress"> Delivery Address (if different) </label>
+              </div>
+            </div>
+            <div id="container3"></div>
+            <div class="col-md-12">
+              <label for="secret" class="form-label">Secret Question</label>
+              <br>
+              <select id="secret" class="form-select" style="font-size: 15px; padding: 3px 10px;">
+                <option selected>What is the name of your favorite book?</option>
+                <option>What is your mother's first name?</option>
+                <option>What is the name of your 1st school?</option>
+              </select>
+              <p id="dateHelpBlock" class="form-text text-muted" style="font-size: 12px;">To help secure your card and your account</p>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label for="Answer" class="form-label">Answer</label>
+              <br>
+              <input type="email" class="form-control" id="Answer" style="font-size: 12px; padding: 3px 10px;">
+            </div>
+            <div class="col-md-12">
+              <label for="card#1" class="form-label">Card #1 First Deposit</label>
+              <br>
+              <select id="card#1" class="form-select" style="font-size: 12px; padding: 3px 10px;">
+                <option selected>o</option>
+                <option>10 Eur</option>
+                <option>20 Eur</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label style="font-size: 15px; width: 410px;">By clicking on VALIDATE i acknowledge that my AMEX card is a customized product and accept its immediate production from the approval of my order and, as such, expressly renounce to exercise my right to cancel my order pursuant to the provisions of article L.121-21-8 of the consumer code</label>
+            </div>
+            <div class="form-check form-switch" class="col-md-12">
+              <input class="form-check-input" style="float: right;" type="checkbox" id="exclusiveoffers" checked>
+              <label id="iwould" class="form-check-label" for="exclusiveoffers">I would like to receive exclusive offers from AMEX Card partners</label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container-nav">
+        <button type="button" id="per" class="btn btn-light btn-sm">
+          <a href="step 1.html">
+            <i class="fas fa-angle-left"></i>&nbsp; Previous </a>
+        </button>
+        <button type="button" id="con" class="btn btn-primary btn-sm">
+          <a href="step 3.html">Continue &nbsp; <i class="fas fa-angle-right"></i>
+          </a>
+        </button>
+      </div>
+    </main>
+    <div class="subscribers">
+      <span>
+        <img class="lion" src="img/lion.png" alt="lion">
+      </span>
+      <span> 730,804 <span id="subox">subscribers trust us.</span> &nbsp; At your service for <span id="number">9</span>
+        <span id="years">YEARS</span>
+        <span id="and">and</span>
+        <span id="number">274</span>
+        <span id="days">Days.</span>
+      </span>
+    </div>
+    <footer class="footer">
+      <img src="img/trust-us.png" alt="" id="phone-girl">
+      <div class="lastwords">
+        <div id="phtext"></div>
+        <div id="AMEX">
+          <strong>AMEX at your service</strong>
+        </div>
+        <div id="Monday">Customer Service in English at your service by <strong>phone</strong> Monday to <strong> Saturday</strong>
+          <br>
+          <strong>from 9h to 18h30</strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
